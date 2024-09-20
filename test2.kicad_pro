@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -177,7 +178,13 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -508,7 +515,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "production/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -519,6 +526,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -655,10 +663,6 @@
     [
       "4e17f4d5-861e-4022-8698-bfcf1341a5d2",
       "matrix"
-    ],
-    [
-      "de08754c-f178-42a6-bd25-fe16df233825",
-      "LED_sheet"
     ]
   ],
   "text_variables": {}
